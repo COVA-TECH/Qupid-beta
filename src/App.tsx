@@ -1,11 +1,10 @@
 import "./App.css";
 
+import LandingPage from "./pages/LandingPage";
 function App() {
 	return (
 		<>
-			<p className="bg-red-500 text-center mt-20 text-bold">
-				Under construction!!!
-			</p>
+			<LandingPage />
 		</>
 	);
 }
