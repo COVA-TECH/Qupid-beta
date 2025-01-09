@@ -8,14 +8,16 @@ const Hero = () => {
 	const isMobile = useIsMobile();
 	return (
 		<section className="min-h-screen w-full  pt-32 sm:pt-44  ">
-			<div className="absolute w-screen  z-[-20] top-0 flex justify-between">
-				<img className="" src={backgrounds.loveBg} alt="" />
-				<img
-					className=" transform scale-x-[-1] "
-					src={backgrounds.loveBg}
-					alt=""
-				/>
-			</div>
+			{!isMobile && (
+				<div className="absolute w-screen  z-[-20] top-0 flex justify-between">
+					<img className="" src={backgrounds.loveBg} alt="" />
+					<img
+						className=" transform scale-x-[-1] "
+						src={backgrounds.loveBg}
+						alt=""
+					/>
+				</div>
+			)}
 			<div className="flex flex-col items-center px-5  gap-5 mb-5">
 				<h1 className="sm:text-center text-4xl leading-[2rem] font-bold sm:tracking-wider">
 					Discover Love, Build Friendships, and <br /> Share Unforgettable
