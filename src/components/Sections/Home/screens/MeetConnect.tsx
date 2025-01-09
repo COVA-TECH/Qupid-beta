@@ -20,7 +20,7 @@ const cardComps = [
 
 const MeetConnect = () => {
 	return (
-		<section className="px-5 lg:px-20 h-screen">
+		<section className="px-5 lg:px-20 h-screen mt-10">
 			<h2 className="font-bold text-center text-2xl sm:text-4xl mb-10">
 				Meet, Connect, and Belong
 			</h2>
