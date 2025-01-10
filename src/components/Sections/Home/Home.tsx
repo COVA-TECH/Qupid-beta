@@ -1,4 +1,5 @@
 import Hero from "./screens/Hero";
+import HowItWorks from "./screens/HowItWorks";
 import MeetConnect from "./screens/MeetConnect";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
 		<>
 			<Hero />
 			<MeetConnect />
+			<HowItWorks />
 		</>
 	);
 };

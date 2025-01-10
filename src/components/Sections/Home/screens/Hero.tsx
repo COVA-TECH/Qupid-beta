@@ -6,10 +6,11 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero = () => {
 	const isMobile = useIsMobile();
+	const isTablet = window.innerWidth < 1200;
 	return (
 		<section className="min-h-screen w-full  pt-32 sm:pt-44  ">
-			{!isMobile && (
-				<div className="absolute w-screen  z-[-20] top-0 flex justify-between">
+			{!isTablet && (
+				<div className="absolute w-full  z-[-20] top-0 flex justify-between">
 					<img className="" src={backgrounds.loveBg} alt="" />
 					<img
 						className=" transform scale-x-[-1] "
@@ -33,8 +34,8 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className="flex justify-center items-center">
-				{isMobile ? (
-					<img src={siteImages.heroMobile} alt="" />
+				{isTablet ? (
+					<img className=" sm:w-[40rem]" src={siteImages.heroMobile} alt="" />
 				) : (
 					<img src={siteImages.heroPc} alt="" />
 				)}
