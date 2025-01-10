@@ -52,7 +52,7 @@ const Footer = () => {
 					</div>
 				)}
 			</div>
-			<div className=" flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-4 h-auto py-10 border-t-2 border-white bg-primary text-white px-2">
+			<div className=" flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-4 h-auto py-10 border-t-2 border-white bg-primary text-white px-2 lg:px-20">
 				<div className="col-span-1">logo</div>
 				<div className="col-span-1 lg:col-span-2">
 					<ul className="flex justify-center gap-0 flex-col lg:flex-row w-full sm:text-end lg:text-center">
