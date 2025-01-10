@@ -4,6 +4,10 @@ import backgrounds from "@/assets/backgrounds/backgrounds";
 import { Button } from "@/components/ui/button";
 // import { useIsMobile } from "@/hooks/use-mobile";
 
+// icons
+import { FaApple } from "react-icons/fa";
+import { FaGooglePlay } from "react-icons/fa";
+
 const Hero = () => {
 	// const isMobile = useIsMobile();
 	const isTablet = window.innerWidth < 1200;
@@ -20,17 +24,23 @@ const Hero = () => {
 				</div>
 			)}
 			<div className="flex flex-col items-center px-5  gap-5 mb-5">
-				<h1 className="sm:text-center text-4xl leading-[2rem] font-bold sm:tracking-wider">
+				<h1 className="sm:text-center text-4xl leading-[2.5rem] font-bold sm:tracking-wider">
 					Discover Love, Build Friendships, and <br /> Share Unforgettable
 					Moments with
-					<span className="sm:block sm:rounded-3xl sm:bg-red-300 p-1 px-4 w-fit sm:mx-auto">
+					<span className="sm:block sm:rounded-3xl sm:bg-red-300 p-1 px-4 w-fit sm:mx-auto lg:mt-2">
 						Qupid
 					</span>
 				</h1>
 
 				<div className="flex flex-col  sm:flex-row gap-2 w-full sm:w-fit ">
-					<Button className="rounded-3xl w-full">Download on iPhone</Button>
-					<Button className="rounded-3xl w-full">Download on Android</Button>
+					<Button className="rounded-3xl w-full">
+						<FaApple />
+						Download on iPhone
+					</Button>
+					<Button className="rounded-3xl w-full">
+						<FaGooglePlay />
+						Download on Android
+					</Button>
 				</div>
 			</div>
 			<div className="flex justify-center items-center">
