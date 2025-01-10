@@ -18,7 +18,7 @@ const HIW = [
 	{
 		title: "Start a Conversation With People",
 		text: "Message someone new, RSVP to an event, or dive into a group conversation.",
-		image: siteImages.app2,
+		image: siteImages.app4,
 		alt: "image of qupid interface",
 	},
 ];
@@ -31,7 +31,10 @@ const HowItWorks = () => {
 			<div className=" flex max-sm:flex-col relative w-full justify-center gap-1 lg:px-44">
 				{HIW.map((item, index) => {
 					return (
-						<div key={index} className=" flex flex-col items-center w-full ">
+						<div
+							key={index}
+							className=" flex flex-col items-center w-full  gap-3"
+						>
 							<h3 className="font-semibold text-xl">{item.title}</h3>
 							<p>{item.text}</p>
 							<img
@@ -43,7 +46,7 @@ const HowItWorks = () => {
 					);
 				})}
 				{isTablet || (
-					<div className="absolute bottom-0 -z-10 h-[50%] w-[90%] right-[5%] rounded-3xl bg-black"></div>
+					<div className="absolute bottom-0 -z-10 h-[70%] w-[90%] right-[5%] rounded-[70px] bg-black"></div>
 				)}
 			</div>
 		</section>
