@@ -2,10 +2,10 @@ import siteImages from "@/assets/images/siteImages";
 import backgrounds from "@/assets/backgrounds/backgrounds";
 
 import { Button } from "@/components/ui/button";
-import { useIsMobile } from "@/hooks/use-mobile";
+// import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero = () => {
-	const isMobile = useIsMobile();
+	// const isMobile = useIsMobile();
 	const isTablet = window.innerWidth < 1200;
 	return (
 		<section className="min-h-screen w-full  pt-32 sm:pt-44  ">

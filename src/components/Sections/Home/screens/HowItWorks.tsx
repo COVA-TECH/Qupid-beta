@@ -1,6 +1,6 @@
 import siteImages from "@/assets/images/siteImages";
 
-import { useIsMobile } from "@/hooks/use-mobile";
+// import { useIsMobile } from "@/hooks/use-mobile";
 
 const HIW = [
 	{
@@ -23,7 +23,7 @@ const HIW = [
 	},
 ];
 const HowItWorks = () => {
-	const isMobile = useIsMobile();
+	// const isMobile = useIsMobile();
 	const isTablet = window.innerWidth < 1200;
 	return (
 		<section className="relative mt-20">
